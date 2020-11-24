@@ -7,14 +7,14 @@ resource "azurerm_key_vault" "kv" {
   #object_id                   = var.objects_id
   enabled_for_disk_encryption = true
 
-access_policy {
-    tenant_id = var.tenant_id
-    object_id = var.object_id
-    key_permissions = [
-      "get", "list"
-    ]
-   secret_permissions = [
-      "get","list"
-    ]
+  access_policy {
+      tenant_id = var.tenant_id
+      object_id = var.object_id
+      key_permissions = [
+        "get", "list"
+      ]
+     secret_permissions = [
+        "get","list"
+      ]
     }
  }

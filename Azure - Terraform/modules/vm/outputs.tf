@@ -10,3 +10,7 @@ output "vm-admin_username" {
 output "vm-admin_password" {
   value = azurerm_windows_virtual_machine.vm.*.admin_password 
 }
+
+output "vm-name" {
+  value = azurerm_windows_virtual_machine.vm.*.name
+}

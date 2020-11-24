@@ -3,10 +3,6 @@ variable "tenant_id" {
   default = "xxxxxx"
 }
 
-variable "object_id" {
-default = "xxxxx"
-}
-
 variable "sku_name" {
   default = "standard"
 }
@@ -15,12 +11,7 @@ variable "keyvalut-name" {
   default = "xxxx"
 }
 
-## Vms Variables 
-
-variable "admin_password" {
-  default = "xxxx"
-}
-
+## Vms Variables
 variable "admin_username" {
   default = "xxxx"
 }
@@ -54,6 +45,10 @@ variable "storage_account_type" {
   default = "xxxx"
 }
 
-variable "subnet_id" {
+variable "subnet_name" {
   default = "xxx"
+}
+
+variable "vnet_name" {
+
 }

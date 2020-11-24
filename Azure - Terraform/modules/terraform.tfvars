@@ -1,0 +1,13 @@
+tenant_id            = "a4969ee2-a30e-4a09-bd97-f13fe7ff1df5"
+sku_name             = "standard"
+keyvalut-name        = "arunkumar-kv"
+admin_username       = "admin_usr"
+location             = "Australia East"
+instance_count       = 2
+name                 = "arunkumar-vm"
+resource_group_name  = "azure-test"
+size                 = "Standard_D2_v2"
+caching              = "ReadWrite"
+storage_account_type = "Standard_LRS"
+subnet_name          = "subnet-web"
+vnet_name            = "azure-test-vnet"
