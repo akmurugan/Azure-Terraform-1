@@ -31,7 +31,7 @@ variable "location" {
 
 variable "instance_count" {
   type = string
-  default = 2
+  default = ""
   }
 
 variable "name" {
@@ -54,6 +54,10 @@ variable "storage_account_type" {
   default = "xxxx"
 }
 
-variable "subnet_id" {
+variable "subnet_name" {
+  default = "xxx"
+}
+
+variable "vnet_name" {
   default = "xxx"
 }

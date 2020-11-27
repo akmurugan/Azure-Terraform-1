@@ -8,7 +8,7 @@ resource "azurerm_windows_virtual_machine" "vm" {
   resource_group_name   = var.resource_group_name
   size                  = var.size
 
-  source_image_reference {
+  source_image_reference {  
       publisher = "MicrosoftWindowsServer"
       offer     = "WindowsServer"
       sku       = "2016-Datacenter"
@@ -26,16 +26,14 @@ resource "azurerm_windows_virtual_machine" "vm" {
 }
 
 resource "azurerm_network_interface" "ni" {
- 
+  count               = var.instance_count
   location            = var.location
-  name                = var.name
+  name                = "${var.name}-ni-${count.index}"
   resource_group_name = var.resource_group_name
 
   ip_configuration {
-    
     name                          = var.name
     subnet_id                     = var.subnet_id
     private_ip_address_allocation = "Dynamic"
   }
 }
-
