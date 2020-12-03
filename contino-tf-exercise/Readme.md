@@ -1,8 +1,8 @@
 Terraform - Exercises
-Exercise	Details
-	
 
-Resources, Variables and Providers	Task:1
+Task:1
+
+Resources, Variables and Providers	
 Azure
 Using Terraform create the following resources in Azure:
 1.	Resource Group
