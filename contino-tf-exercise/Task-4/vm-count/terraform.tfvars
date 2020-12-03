@@ -1,0 +1,10 @@
+admin_username       = "arun-usr"
+location             = "centralindia"
+instance_count       = 2
+name                 = "ak-vm"
+resource_group_name  = "arun-rg"
+size                 = "Standard_D2_v2"
+caching              = "ReadWrite"
+storage_account_type = "Standard_LRS"
+subnet_name          = "subnet1"
+virtual_network_name = "arun-vnt"
