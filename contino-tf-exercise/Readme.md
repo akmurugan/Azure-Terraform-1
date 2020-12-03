@@ -59,12 +59,15 @@ Exercises : Loops (for_each, count, for)
 
 Details:
 1.	count exercise
-  .	Use the count property to provision 3 VMs.
-  .	Use a for loop to iterate over all VMs and output the VM Id .
+
+  	Use the count property to provision 3 VMs.
+  	Use a for loop to iterate over all VMs and output the VM Id.
+    
 2.	for_each exercise
-  .	Create a map variable for VMs.
-  .	Use a for_each statement to loop across each map item to provision the resources.
-  .	Use a forloop to iterate over all VMs and output the VM Id .
+  
+  Create a map variable for VMs.
+  Use a for_each statement to loop across each map item to provision the resources.
+  Use a forloop to iterate over all VMs and output the VM Id.
 
 
 
