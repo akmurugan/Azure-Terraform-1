@@ -1,47 +1,14 @@
-# Storage Account
+# Task 1
 
-## Introduction
 
-This component deploys a storage account with a container that can be used to store files and blob data. You can read more about storage account [here](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview).
-
-This component creates the following Azure resources :
-
-- Storage account
-- Storage account Containers
-- Storage account Folders (Through null resource)
-- Folder level permissions (Through null resource)
-
-## Dependencies
-
-This component depends on the following resources :
-
-- Resource Group
-- Log analytics workspace
-- Azure AD group pre created (As this is an admin functionality, this component expects this to be created manually)
-
-## Requirements
-
-| Name | Version |
-|------|---------|
-| terraform | >= 0.12.6 |
-| azuread | =0.9.0 |
-| azurerm | =2.3.0 |
-
-## Providers
-
-| Name | Version |
-|------|---------|
-| azuread | =0.9.0 |
-| azurerm | =2.3.0 |
-| external | n/a |
-| null | n/a |
-| random | n/a |
-
-## Inputs
-
-| Name | Description | Type | Default | Required |
+| Exercise | Description | Details |
 |------|-------------|------|---------|:--------:|
-| account\_kind | (Optional) Defines the Kind of account, Changing this forces a new resource to be created | `string` | `"StorageV2"` | no |
+| Task1 | Azure
+Using Terraform create the following resources in Azure:
+1.	Resource Group
+2.	Network Security Group
+
+| `string` | `"StorageV2"` | no |
 | account\_replication\_type | (Optional) Defines the type of replication to use for this storage account | `string` | `"LRS"` | no |
 | account\_tier | (Optional) Defines the Tier to use for this storage account | `string` | `"Standard"` | no |
 | base\_name | (Required) Base name to be used as prefix for all created resources | `string` | n/a | yes |
