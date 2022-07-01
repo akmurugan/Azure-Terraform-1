@@ -14,10 +14,12 @@ variable "address_space" {
   default = ""
 }
 
-variable "subnet_names" {
+variable "address_space" {
   default = ""
 }
-
-variable "subnet_prefixes" {
-  default = ""
-}
+  variable "Subnetlist" {
+      type = map(object({
+        name    = list(string)
+        address = list(string)
+    }))
+    }
