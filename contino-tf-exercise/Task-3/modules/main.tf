@@ -42,12 +42,11 @@
    
 ## Create a virual Network & subnet using modules
 
-  module "vnet" {
+module "vnet" {
   source              = "../modules/Network/vnet"
+  Subnetlist          = var.Subnetlist
   vnet_name           = var.vnet_name
   resource_group_name = var.resource_group_name
-  location            = var.location  
+  location            = var.location
   address_space       = var.address_space
-  subnet_prefixes     = var.subnet_prefixes
-  subnet_names        = var.subnet_names
-  }
+}

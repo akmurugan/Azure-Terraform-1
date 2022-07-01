@@ -1,18 +1,12 @@
-tenant_id            = "4a1c1070-2a5b-4bdf-b773-6055c2c740a4"
-object_id            = "6b136d27-e574-4b74-98ca-6e69e6ffa050"
-sku_name             = "standard"
-keyvalut-name        = "arunkumar-kv"
-admin_username       = "admin_usr"
-location             = "centralindia"
-instance_count       = 2
-name                 = "arunkumar-vm"
-resource_group_name  = "arun-rg"
-size                 = "Standard_D2_v2"
-caching              = "ReadWrite"
-storage_account_type = "Standard_LRS"
-subnet_name          = "subnet1"
-vnet_name            = "arun-vnt1" 
-virtual_network_name = "arun-vnt"
-address_space        = ["10.0.0.0/16"]
-subnet_names         = "subnet2"
-subnet_prefixes      = ["10.0.0.0/24"]  
+location            = "centralindia"
+resource_group_name = "arun-rg"
+vnet_name           = "arun-vnt1"
+address_space       = ["10.11.0.0/16"]
+
+Subnetlist = {
+  "list" = {
+    name    = ["appgateway-subnet", "aks_subnet", "sql_subnet"]
+    address = ["10.11.12.0/24", "10.11.15.0/24", "10.11.16.0/24"]
+  }
+}
+
